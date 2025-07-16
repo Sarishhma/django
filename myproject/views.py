@@ -3,6 +3,6 @@ from django.shortcuts import render
 def home (request):
     return render (request,"website/index.html")
 def about(request):
-    return render("this is about page")
+    return render(request,"this is about page")
 def contact(request):
-    return render("this is contact page")
+    return render(request,"this is contact page")

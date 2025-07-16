@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
+       {% block title %}
+    hello through extend fearture
+    {% endblock  %}
       {% tailwind_css %}
+
 </head>
 <body>
     <h1  class="text-3xl font-bold underline" >hello world! this is sarishma zimba</h1>
-    {% block title %}
+    {% block content %}
     hello through extend fearture
-    {% endblock title %}
+    {% endblock  %}
 </body>
 </html>

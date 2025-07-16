@@ -1,8 +1,8 @@
-from django.http import HttpResponse
+from .models import item
 from django.shortcuts import render
-def home (request):
-    return render (request,"website/index.html")
-def about(request):
-    return render("this is about page")
-def contact(request):
-    return render("this is contact page")
+def new(request):
+    images = item.objects.all()
+    return render (request,'app/new.html',{'images':images}
+                   )
+
+  
